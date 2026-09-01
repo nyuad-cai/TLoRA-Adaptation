@@ -1,0 +1,25 @@
+experiment_name: task2_deepseek 
+
+model:
+  type: deepseek            #model handler type as written in models/__init__.py
+  name: deepseek-chat  # just as it appears in huggingface
+
+cache_dir: /scratch/ca2627/huggingface #modify to your own cache directory
+
+dataset:
+  path: datasets/answer-gen/medarabenchv2.json   #path to dataset JSON file
+  instruction_path: prompts/task2.txt  #path to instruction file (default.txt)
+
+task:
+  type: answer_generation                #task 1: mcq or task 2: answer_generation
+  lang: ar
+
+
+judge:
+  prompt_path: prompts/judge-task2.txt
+
+output:
+  predictions_path: results/predictions/task2/medarabenchv2/deepseek.csv #specify output pred file
+  metrics_path: results/metrics/task2/medarabenchv2/deepseek.json  #specift output pred file
+
+

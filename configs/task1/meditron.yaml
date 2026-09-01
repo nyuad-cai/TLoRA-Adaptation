@@ -1,0 +1,19 @@
+experiment_name: task1_gpt5 
+
+model:
+  type: meditron           #model handler type as written in models/__init__.py
+  name: OpenMeditron/Meditron3-70B # just as it appears in huggingface
+
+cache_dir: /scratch/ca2627/huggingface #modify to your own cache directory
+
+dataset:
+  path: datasets/qa/medarabiq.json   #path to dataset JSON filexww
+  instruction_path: prompts/task1.txt  #path to instruction file (default.txt)
+
+task:
+  type: mcq                #task 1: mcq or task 2: answer_generation
+
+output:
+  predictions_path: results/predictions/task1/medarabiq/meditron.csv #specify output pred file
+  metrics_path: results/metrics/task1/medarabiq/meditron.json  #specift output pred file
+

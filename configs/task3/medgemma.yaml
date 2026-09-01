@@ -1,0 +1,21 @@
+experiment_name: task3_medgemma
+model:
+  type: medgemma                                  # model handler type as written in models/__init__.py
+  name: google/medgemma-27b-text-it               # just as it appears in huggingface
+  
+cache_dir: /scratch/netid/huggingface             # modify to your own cache directory
+
+dataset:
+  path: datasets/dialogue-completion/medarabenchv2.json   # path to dataset JSON file
+  instruction_path: prompts/task3-MSA.txt         # path to instruction file
+  
+task:
+  type: dialogue_completion                       # task 3
+  max_tokens: 256
+  
+judge:
+  prompt_path: prompts/judge-task3.txt            # 4-axis (non-binary) judge for task 3
+  
+output:
+  predictions_path: results/predictions/task3/medarabenchv2/medgemma.csv
+  metrics_path: results/metrics/task3/medarabenchv2/medgemma.json

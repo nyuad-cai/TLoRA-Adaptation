@@ -1,0 +1,19 @@
+experiment_name: task2_gpt5 
+
+model:
+  type: openai            #model handler type as written in models/__init__.py
+  name: o3               #change to model name 
+
+cache_dir: /scratch/ca2627/huggingface #modify to your own cache directory
+
+dataset:
+  path: datasets/qa/medarabiq/test.json   #path to dataset JSON file
+  instruction_path: prompts/task2.txt  #path to instruction file (default.txt)
+
+task:
+  type: answer_generation             #task 1: mcq or task 2: answer_generation
+
+output:
+  predictions_path: results/predictions/task2/test.csv #specify output pred file
+  metrics_path: results/metrics/task2/test.json  #specift output pred file
+

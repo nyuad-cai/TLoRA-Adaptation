@@ -1,0 +1,27 @@
+experiment_name: task1_autocap_mistral
+
+model:
+  type: autocap
+  name: mistralai/Mistral-Small-3.2-24B-Instruct-2506
+  cache_dir: /scratch/ca2627/huggingface
+  offline: true
+
+  candidate_languages: ["Arabic", "English", "French"]
+  top_k_languages: 3
+  selection_max_tokens: 96
+  weight_max_tokens: 96
+  reasoning_max_tokens: 32
+  do_sample: false
+
+dataset:
+  path: datasets/qa/mmlu-arabic.json
+  instruction_path: prompts/task1.txt
+
+task:
+  type: mcq
+  lang: ar
+
+output:
+  predictions_path: results/predictions/task1/mmlu/autocap_mistral.csv
+  metrics_path: results/metrics/task1/mmlu/autocap_mistral.json
+  debug_path: results/debug/task1/mmlu/autocap_mistral.jsonl
