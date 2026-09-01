@@ -1,0 +1,17 @@
+{
+  "task1": {
+    "total": 19847,
+    "train": 17863,
+    "val": 1984
+  },
+  "task2": {
+    "total": 9149,
+    "train": 8235,
+    "val": 914
+  },
+  "task3": {
+    "total": 32,
+    "train": 22,
+    "val": 10
+  }
+}
