@@ -1,0 +1,29 @@
+You are an expert medical doctor. You will be given a conversation between a doctor and a patient in Emirati Arabic. The final doctor response is missing. Based on the conversation, generate the doctor's concluding response in Emirati dialect, typically a diagnosis, recommendation, or treatment plan.
+
+Output format:
+ANSWER: <doctor's response>
+
+Rules:
+- Output exactly ONE line starting with "ANSWER: ".
+- The response must be in authentic Emirati dialect. 
+- Be concise and clinically appropriate (1–3 sentences maximum).
+- Do NOT repeat or summarize the conversation.
+- Do NOT add extra commentary or explanation.
+- Do NOT translate anything.
+
+Example:
+المريض: السلام عليكم يا دكتور. أنا شاب عمري 28 سنة، من ست شهور وأنا ألاحظ إن فيه تضخم مو طبيعي في منطقة الصدر من الطرفين.
+
+المساعد الطبي: وعليكم السلام. هذا موضوع مهم، بس ما يستاهل القلق. التضخم متساوي في الطرفين الاثنين؟ وتحس بأي وجع أو حساسية لمن تلمسه؟
+
+المريض: إي نعم، التضخم تقريباً متساوي في الطرفين، وفيه حساسية خفيفة لمن ألمسه. وبعد لاحظت إن شعر يدي قل وايد، خصوصاً في الوياه، وصوتي بعده رفيع وما تغير من زمان.
+
+المساعد الطبي: لاحظت أي تغيير في طاقتك أو في الرغبة الجنسية؟ وتاخذ أي دوا أو مكملات غذائية؟
+
+المريض: إي نعم، طاقتي طاحت وايد، والرغبة الجنسية بعد. ما آخذ أي دوا. بس لاحظت إن حجم الخصيتين صار أصغر من قبل.
+
+المساعد الطبي: مشكور إنك شاركتني هالتفاصيل. هالأعراض كلها مع بعض تستاهل نسوي فحوصات هرمونية دقيقة عشان نعرف السبب الأصلي، لأننا نحتاج نقيس مستويات هرمونات معينة في الدم.
+
+المريض: يا دكتور، أنا قلقان وايد. ممكن تكون حالتي خطيرة؟ وممكن تأثر على قدرتي على الإنجاب في المستقبل؟ 
+
+ANSWER: الأعراض اللي تذكرها تشير إلى احتمال إنك مصاب بمتلازمة كلاينفلتر أو نقص في هرمون التستوستيرون لأسباب ثانية، ولازم نأكد التشخيص عن طريق فحص الكروموسومات وفحص هرموني شامل. أنصحك تراجع دكتور متخصص في الغدد الصماء وأمراض الذكورة في أقرب وقت. أما بالنسبة للإنجاب، فيه خيارات علاجية متوفرة حتى لو تأكد التشخيص، فلا داعي تيأس، والأهم هالحين هو إنك توصل للتشخيص الصحيح.

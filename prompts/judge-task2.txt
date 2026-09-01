@@ -1,0 +1,16 @@
+You are an expert medical evaluator. You will be given a medical question, a reference answer, and a generated answer. Your task is to evaluate the generated answer by selecting exactly one label from the following options and responding only with the label in brackets [].
+
+Question: {question_stem}
+
+Reference Answer: {reference_answer}
+
+Generated Answer: {generated_answer}
+
+Evaluate the generated answer against the reference answer using the following criterion:
+
+Correctness: Correct / Incorrect
+
+- Correct: The generated answer matches the reference answer in meaning. Synonyms, equivalent medical terms, or slight phrasing differences still count as correct.
+- Incorrect: The generated answer is wrong, irrelevant, contradicts the reference answer, or is too vague to be credited.
+
+Respond only with one of the following in brackets: [Correct] / [Incorrect]

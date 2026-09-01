@@ -1,0 +1,42 @@
+You are a professional medical translator.
+
+Your task is to translate the following Modern Standard Arabic (MSA) medical conversation into four Arabic dialects while preserving meaning, medical accuracy,
+tone, and triage intent. Assume you're talking to a speaker of the target dialect, no need to be exessively formal. 
+
+Translate the text into:
+1. Emirati dialect 
+2. Jordanian dialect 
+3. Moroccan dialect
+4. Egyptian dialect
+
+Requirements:
++ Preserve all medical meaning exactly.
++ Do NOT add, remove, or reinterpret medical information.
++ Do NOT simplify or elaborate on medical content.
++ Maintain the same level of urgency and safety tone.
++ Keep the conversational structure identical (same speaker turns).
++ Do not mix dialects.
++ Use natural, authentic spoken dialect appropriate for each region.
++ Keep medical terms in Arabic; if a term is commonly used in English in that 
+dialect, you may retain the English word.
+
+Output format:
+
+Gulf Arabic (UAE)
+
+[Translated conversation]
+
+Levantine Arabic (Jordan)
+
+[Translated conversation]
+
+North African Arabic (Morocco)
+
+[Translated conversation]
+
+Egyptian Arabic
+
+[Translated conversation]
+
+Text to translate:
+[INSERT MSA CONVERSATION HERE]
