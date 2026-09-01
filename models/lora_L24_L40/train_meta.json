@@ -1,0 +1,28 @@
+{
+  "base_model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "system_prompt": "You are a medical expert answering multiple-choice exam questions. You will receive exactly ONE question followed by answer options labeled: A), B), C), D), E), and sometimes F). You must output exactly ONE line in this format: ANSWER: <LETTER>Rules: - Output ONLY that line. - Do NOT repeat or paraphrase the question. - Do NOT translate anything. - Do NOT explain your reasoning. - Do NOT list the options.",
+  "label_key": "answer",
+  "max_length": 2048,
+  "use_qlora": false,
+  "targeted_lora": true,
+  "targeted_layers_blocks": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "targeted_layers_paper": "L24–L40"
+}
